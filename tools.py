@@ -67,8 +67,8 @@ async def send_email(
         smtp_port = 587
         
         # Get credentials from environment variables
-        gmail_user = os.getenv("piyush.8e@gmail.com") # Your Gmail address
-        gmail_password = os.getenv("wsym nkdr bekt rzum")  # Use App Password, not regular password my password wsym nkdr bekt rzum
+        gmail_user = os.getenv("GMAIL_ADDRESS") # Your Gmail address
+        gmail_password = os.getenv("APP_PASSWORD")  # Use App Password, not regular password my password wsym nkdr bekt rzum
         
         if not gmail_user or not gmail_password:
             logging.error("Gmail credentials not found in environment variables")
@@ -153,4 +153,5 @@ async def web_autoopener(
         return f"Opened URL: {url}"
     except Exception as e:
         logging.error(f"Error opening URL '{url}': {e}")
+
         return f"An error occurred while opening URL '{url}'."
