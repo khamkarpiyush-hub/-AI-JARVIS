@@ -9,6 +9,7 @@ AI Jarvis – An experimental AI voice assistant built in Python, using LiveKit 
 
 - ## Project Structure
 - agent.py # Core entry point
-├── tools/ # Custom tools (web search, email, etc.)
-├── requirements.txt # Python dependencies
-├── .env.example # Example environment file
+- tools/ # Custom tools (web search, email, etc.)
+- requirements.txt # Python dependencies
+- .env.example # Example environment file
+- prompts.py # Set of instructions to make it like out inspiration Iron Man 
