@@ -1,0 +1,39 @@
+# LiveKit and agent tools
+livekit
+
+# Google Realtime LLM
+google-api-python-client
+
+# Async & HTTP
+aiohttp
+asyncio
+
+# Email handling
+smtplib
+email
+
+# Environment variables
+python-dotenv
+
+# Logging
+logging
+# LiveKit and agent tools
+livekit
+
+# Google Realtime LLM
+google-api-python-client
+
+# Async & HTTP
+aiohttp
+asyncio
+
+# Email handling
+smtplib
+email
+
+# Environment variables
+python-dotenv
+
+# Logging
+logging
+
