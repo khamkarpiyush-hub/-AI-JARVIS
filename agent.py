@@ -10,9 +10,6 @@ from prompts import AGENT_INSTRUCTION, SESSION_INSTRUCTION
 from tools import get_weather, search_web,  send_email, current_time, web_autoopener
 
 load_dotenv(".env")
-import os
-#print("GOOGLE_API_KEY =", os.getenv("GOOGLE_API_KEY"))
-#print("DEBUG GOOGLE_API_KEY =", os.getenv("GOOGLE_API_KEY"))
 
 
 class Assistant(Agent):
@@ -26,7 +23,7 @@ class Assistant(Agent):
 async def entrypoint(ctx: agents.JobContext): 
     session = AgentSession(
         llm=google.beta.realtime.RealtimeModel(
-            api_key="AIzaSyA4c2zJFWmAU3jWoBelGdKNQGzPoi1qKAA",
+            api_key="KEY_HERE", # for direct access
             voice="Charon",
             temperature=0.8 # Temperature controls creativity vs accuracy:
                             # 0.2–0.4 → serious & deterministic (study/technical)
@@ -52,3 +49,4 @@ async def entrypoint(ctx: agents.JobContext):
 
 if __name__ == "__main__":
     agents.cli.run_app(agents.WorkerOptions(entrypoint_fnc=entrypoint))
+
